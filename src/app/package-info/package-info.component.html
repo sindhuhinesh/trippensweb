@@ -1,0 +1,105 @@
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-5 mx-auto flex flex-wrap">
+    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 overflow-hidden">
+      <span class="font-mono text-3xl mb-2">Green Valley</span>
+      <img alt="feature" class="object-cover object-center h-full w-full rounded" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Neeulm_Valley_AJK_%28Arang_Kel%29.jpg">
+    </div>
+
+    <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+      <div class="flex mb-2">
+         <button class="ml-auto text-white text-xl bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded" (click)="toggleModal()">Book Now</button>
+        <div class="text-white border-0 py-2 px-6 focus:outline-none  rounded">
+          <div class="text-xl">₹5000</div>
+          <div>Per Person</div>
+
+        </div>
+      </div>
+      <div class="flex flex-col mb-3 lg:items-start items-center">
+        <div class="flex-grow">
+          <h2 class="text-white text-lg title-font font-medium mb-1">
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-purple-400 mb-2 mr-2">
+              <mat-icon>visibility</mat-icon>
+            </div>
+            Overview
+          </h2>
+          <p class="leading-relaxed text-base">Jammu and Kashmir was a region formerly administered by India as a state from 1954 to 2019, constituting the southern and southeastern portion of the larger Kashmir region, which has been the subject of a dispute between India, Pakistan and China since the mid-20th century.</p>
+          <!-- <a class="mt-3 text-purple-400 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a> -->
+        </div>
+      </div>
+      <div class="flex flex-col mb-3 lg:items-start items-center">
+
+        <div class="flex-grow">
+          <h2 class="text-white text-lg title-font font-medium mb-3">
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-purple-400 mb-2">
+              <mat-icon>home</mat-icon>
+            </div>
+            Stay
+          </h2>
+          <div class="">
+            <img alt="testimonial" class="w-20 h-20 mb-4 object-cover object-center rounded mx-2 inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10" src="https://media.easemytrip.com/media/Blog/India/636967251706354069/636967251706354069536xiC.jpg">
+            <img alt="testimonial" class="w-20 h-20 mb-4 object-cover object-center rounded mx-2  inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10" src="https://assets.cntraveller.in/photos/618cec4fcb71571d901e7b4f/master/w_1600%2Cc_limit/The%2520Vintage%2520Gulmarg.jpeg">
+            <img alt="testimonial" class="w-20 h-20 mb-4 object-cover object-center rounded mx-2  inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10" src="https://media.easemytrip.com/media/Blog/India/636967251706354069/63696725170635406998juQN.jpg">
+          </div>
+          <p class="leading-relaxed text-base">Which are the best resorts to stay in Jammu and Kashmir? · The Vintage Gulmarg Four Star Hotel 2739, Circular Road, Gulmarg, Jammu and Kashmir.</p>
+          <!-- <a class="mt-3 text-purple-400 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a> -->
+        </div>
+      </div>
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+
+        <div class="flex-grow">
+          <h2 class="text-white text-lg title-font font-medium mb-3">
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-purple-400 mb-2">
+              <mat-icon>calendar_view_day</mat-icon>
+            </div>
+            Itinery
+          </h2>
+          <p class="leading-relaxed text-base">The definition of itinerary is a travel plan. An example of an itinerary is the list of dates and cities for a tour group. An example of an itinerary is your planned route. noun.</p>
+          <a class="mt-3 text-purple-400 inline-flex items-center">Download Itinery
+            <mat-icon class="mx-2">cloud_download</mat-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div *ngIf="showModal" class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
+  <div class="relative w-auto my-6 mx-auto max-w-6xl">
+    <!--content-->
+    <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+      <!--header-->
+      <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+        <div class="text-3xl font-semibold font-mono">
+          Book Your Trip
+        </div>
+        <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" (click)="toggleModal()">
+          <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+            ×
+          </span>
+        </button>
+      </div>
+      <!--body-->
+      <div class="relative p-6 flex-auto">
+        <app-package-booking-form></app-package-booking-form>
+      </div>
+      <!--footer-->
+      <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+        <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" (click)="toggleModal()">
+          Close
+        </button>
+        <button class="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" (click)="toggleModal()">
+          Book
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="showModal" class="opacity-25 fixed inset-0 z-40 bg-black"></div>
