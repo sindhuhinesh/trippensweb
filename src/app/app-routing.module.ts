@@ -4,6 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { PackageInfoComponent } from './package-info/package-info.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { AllPackagesComponent } from './all-packages/all-packages.component';
+import { AllTestimonialsComponent } from './all-testimonials/all-testimonials.component';
+import { AllMediaComponent } from './all-media/all-media.component';
 
 const routes: Routes = [
   {
@@ -16,12 +20,24 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'all-package-info',
+    component: AllPackagesComponent
+  },
+  {
     path: 'package-info',
     component: PackageInfoComponent
   },
   {
     path: 'gallery',
     component: GalleryComponent
+  },
+  {
+    path: 'all-testimonials',
+    component: AllTestimonialsComponent
+  },
+  {
+    path: 'all-media',
+    component: AllMediaComponent
   }
 ];
 

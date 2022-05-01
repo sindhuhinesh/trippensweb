@@ -16,6 +16,15 @@ import { FooterComponent } from './footer/footer.component';
 import { PackageBookingFormComponent } from './package-booking-form/package-booking-form.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AboutComponent } from './about/about.component';
+import { MediaComponent } from './media/media.component';
+import { NavbarOnlyComponent } from './navbar-only/navbar-only.component';
+import { AllPackagesComponent } from './all-packages/all-packages.component';
+import { PackageCarouselComponent } from './package-carousel/package-carousel.component';
+import { AllTestimonialsComponent } from './all-testimonials/all-testimonials.component';
+import { AllTestimonialsCarouselComponent } from './all-testimonials-carousel/all-testimonials-carousel.component';
+import { AllMediaComponent } from './all-media/all-media.component';
+import { AllMediaCarouselComponent } from './all-media-carousel/all-media-carousel.component';
 
 
 
@@ -31,6 +40,15 @@ import { GalleryComponent } from './gallery/gallery.component';
     FooterComponent,
     PackageBookingFormComponent,
     GalleryComponent,
+    AboutComponent,
+    MediaComponent,
+    NavbarOnlyComponent,
+    AllPackagesComponent,
+    PackageCarouselComponent,
+    AllTestimonialsComponent,
+    AllTestimonialsCarouselComponent,
+    AllMediaComponent,
+    AllMediaCarouselComponent,
   ],
   imports: [
     BrowserModule,
